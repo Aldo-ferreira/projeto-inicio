@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+.Alinhamento {
+    display: inline-flex; 
+    justify-content: center; /* Centraliza horizontalmente */
+    
+    
+     
+}
+
+.container-left {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.container-right {
+    display: inline-block;
+    background-color: rgba(0, 98, 65, 0.16);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #006241;
+    border-radius: 10px; /* Cantos arredondados */
+    
+   
+}
+
+.conteiner-bottom {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.conteiner-lateral {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+  
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #006241;
+    padding: 10px 20px;
+    color: #fff;
+    position: sticky;
+    /* Ou use 'fixed' */
+    top: 0;
+    /* Posiciona no topo */
+    z-index: 1000;
+    /* Garante que o menu fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para destacar o menu */
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+/*fazendo o menu ficar sublinhado*/
+
+.menu-item {
+    position: relative; /* Necessário para posicionar o ::after em relação ao item */
+    display: inline-block; /* Mantém os itens em linha */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    color: #fff; /* Cor inicial do texto */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave para cor */
+}
+
+.menu-item:hover {
+    color: #f8faf9; /* Muda a cor do texto ao passar o mouse */
+}
+
+.menu-item::after {
+    content: "";
+    position: absolute; /* Posiciona a linha relativa ao item */
+    left: 0;
+    bottom: 0; /* Ajusta a posição para o final do item */
+    width: 0; /* Largura inicial da linha */
+    height: 2px; /* Espessura da linha */
+    background-color: #fff; /* Cor da linha */
+    transition: width 0.3s ease; /* Animação suave */
+}
+
+.menu-item:hover::after {
+    width: 100%; /* Linha se expande para ocupar toda a largura do item */
+}
+
+.enqua-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    text-align: center;
+
+
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color: #f8faf9;
+    color: #006241;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 130px;
+    height: 41px;
+    margin-left: 10px;
+}
+
+.botao-saiba {
+    padding: 10px 20px;
+    background-color: #006241;
+    color: #f8faf9;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.copo {
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma leve sombra */
+    max-width: 50%;
+}
+
+.copo:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeiramente no hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    /* Intensifica a sombra no hover */
+}
+
+.conteiner-bottom {
+    display: inline-flexbox;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: center;
+   
+}
+
+.mapa {
+    display: inline-flex;
+    border: 2px solid #ccc;
+    /* Borda para destacar o mapa */
+    border-radius: 20px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    overflow: hidden;
+    /* Garante que nada saia dos limites do contêiner */
+    width: 50%;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 9%;
+}
+
+.descricao {
+    width: 50%;
+    margin-left: 10px;
+    margin-top:  10px;
+    margin-bottom: 24px;
+    text-align: center;
+    border: 2px solid #006241;
+    border-radius: 10px; /* Cantos arredondados */
+    
+}
+
+.Titulo {
+    font-size: 2.5rem;
+    color: #006241;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 20;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.destaque {
+    color: #006241;
+    font-weight: bold;
+ 
+}
+
+.thumb-mover {
+    display: inline;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    /* Remove o espaçamento que pode desalinhar */
+}
+
+.thumb {
+    border-radius: 10px;
+    /* Cantos mais arredondados para um visual moderno */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animação suave para escala e sombra */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    /* Sombra inicial mais suave */
+    padding-left: 0;
+    /* Remove o espaçamento que pode desalinhar */
+    margin: 10px;
+    /* Espaçamento externo uniforme */
+    max-width: 25%;
+    /* Garante que a miniatura se ajuste ao contêiner */
+    cursor: pointer;
+    /* Adiciona um cursor de interação */
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+    /* Ampliação no hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Sombra mais intensa ao passar o mouse */
+    filter: brightness(1.1);
+    /* Aumenta o brilho para destacar a imagem */
+}
+
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 668px) {
+    .wrapper {
+        display: inline-block;
+        height: auto; /* Ajusta a altura automaticamente */
+        width: 100%; /* Garante que ocupe toda a largura */
+    }
+
+    .Alinhamento {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .container-left, .container-right {
+        width: 80%; /* Ajusta a largura para caber na tela */
+        margin: 5px auto; /* Centraliza com margens automáticas */
+    }
+
+    .conteiner-bottom {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        margin: 1px auto; /* Centraliza com margens automáticas */
+    }
+
+    .mapa {
+        width: 95%; /* Ajusta a largura para 100% */
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .menu {
+        flex-wrap: wrap; /* Permite quebra de linha para os itens do menu */
+        padding: 10px; /* Reduz o padding */
+    }
+
+    .menu-item {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
+        margin: 5px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .logo {
+        max-height: 40px; /* Reduz o tamanho da logo */
+    }
+
+    .botao {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        width: 100%; /* Ocupa toda a largura disponível */
+        margin: 5px ; /* Espaçamento entre os botões */
+        
+    }
+
+    .botao-saiba {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        width: 50%; /* Ocupa toda a largura disponível */
+        margin: 5px 0; /* Espaçamento entre os botões */
+    }
+
+
+    .copo {
+        max-width: 90%; /* Ajusta a imagem para caber na tela */
+        margin: center; /* Espaçamento entre os elementos */
+    }
+
+    .thumb {
+        max-width: 100%; /* Garante que as miniaturas se ajustem */
+        margin: 10px auto; /* Centraliza com margens automáticas */
+    }
+
+    .Titulo {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte */
+        text-align: center; /* Centraliza o título */
+    }
+
+    p {
+        font-size: 1rem; /* Reduz o tamanho da fonte */
+        text-align: justify; /* Justifica o texto */
+    }
+
+    .descricao {
+        width: 90%;
+        margin-left: 10px;
+        margin-top:  10px;
+        margin-right:  10px;
+    
+}
+}
